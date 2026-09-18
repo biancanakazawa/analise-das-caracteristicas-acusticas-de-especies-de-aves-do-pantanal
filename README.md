@@ -29,10 +29,12 @@ Projeto concluído
 
 ## Funcionalidades
 
-Este projeto possui as seguites funcinalidades implementadas:
-
-- **Funcionalidade 1**: 
-
+- **Funcionalidade 1**: Separação dos áudios em segmentos de 3s (padrão).
+- **Funcionalidade 2**: Para cada segmento, encontra atividade sonora e faz uma demarcação para adiquirir informações de frequência miníma, frequência máxima e duração.
+- **Funcionalidade 3**: Gera imagens do espectrograma desses segmentos e suas marcações de atividade sonora.
+- **Funcionalidade 4**: Compara as informações de cada segmento com a tabela .csv para encontrar similaridades com alguma espécie (5 maiores similaridades são salvas).
+- **Funcionalidade 5**: Roda o BirdNET e das espécies que teve similariedade tenta encontrar se foi uma das mesmas das 5 espécies encontradas na Funcionalidade 4.
+- **Funcionalidade 6**: Caso haja alguma correspondencia, ele salva aquele segmento de áudio em uma pasta com o nome da espécie.
 
 ## Instruções para Executar o Projeto
 
@@ -64,6 +66,8 @@ Nesse diretório será possível executar a ```main.py``` pelo comando:
 python main.py
 ```
 
+Ao executar a ```main.py```, ele perguntará qual o 'nome do diretório de áudios contínuos', você terá que digitar o diretório que encontra os áudios que se deseja analisar, esse diretório deve estar localizada no diretório ```script```. Após isso, esperar para terminar de analisar todos os áudios que estão nesse diretório.
+
 ## Tecnologias e Ferramentas Utilizadas
 
 | Ferramenta | Versão |
@@ -73,6 +77,7 @@ python main.py
 | [BirdNET Analyzer](https://github.com/birdnet-team/BirdNET-Analyzer) | `2.4.0`|
 | [VS Code](https://code.visualstudio.com/) | `1.135.0`|
 | [GitHub](https://github.com/) | - |
+| [Claude](https://claude.ai/) | `Sonnet 5` |
 
 ## Pessoas Contribuidoras
 
@@ -87,8 +92,6 @@ Esse projeto teve a contribuição do Prof. Dr. Thiago Meirelles Ventura, orient
 ## Pessoas Desenvolvedoras do Projeto
 
 ### Bianca Mitie Nakazawa
-- [Git](https://github.com/biancanakazawa)
+- [GitHub](https://github.com/biancanakazawa)
 - [ORCID](https://orcid.org/0009-0009-6658-0996)
 - [Lattes]( http://lattes.cnpq.br/4629350229599265)
-
-## Conclusão
